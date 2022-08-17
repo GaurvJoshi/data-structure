@@ -9,10 +9,10 @@ public class Subsequence {
             System.out.print(seq);
             return;
         }
-            createSubsequence(ind + 1, arr, seq);
-            seq.add(arr[ind]);
-            createSubsequence(ind + 1, arr, seq);
-            seq.remove(seq.size() - 1);
+        createSubsequence(ind + 1, arr, seq);
+        seq.add(arr[ind]);
+        createSubsequence(ind + 1, arr, seq);
+        seq.remove(seq.size() - 1);
     }
     public static void main(String[] args) {
         int[] arr = {1,2,3};
